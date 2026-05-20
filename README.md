@@ -16,6 +16,7 @@ Ejecutar en bash
 docker compose up -d
 # Grafana: http://localhost:3000  →  admin / devops123
 # Prometheus: http://localhost:9090
+```
 Dashboard: 8 paneles
 •	Requests por segundo (stat)
 •	Latencia p50 (stat)
@@ -25,14 +26,19 @@ Dashboard: 8 paneles
 •	Latencia p50/p95/p99 (timeseries)
 •	CPU del host (timeseries)
 •	Memoria del host (timeseries)
+```
 Alertas configuradas
+```
 •	AppDown — backend caído por más de 1 minuto
 •	HighCPU — CPU > 80% por 2 minutos
 •	HighErrorRate — errores 5xx > 5% por 1 minuto
 •	DiskSpaceLow — disco > 85% por 5 minutos
+```
 Métricas propias de la app
+```
 app_requests_total          # contador por método/endpoint/status
 app_request_duration_seconds # histograma de latencia
 app_notes_total              # gauge: notas en la DB
 app_db_errors_total          # contador de errores de DB
 app_info                     # versión y entorno
+```
