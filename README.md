@@ -14,8 +14,8 @@
 
 Ejecutar en bash
 docker compose up -d
-# Grafana: http://localhost:3000  →  admin / devops123
-# Prometheus: http://localhost:9090
+## Grafana: http://localhost:3000  →  admin / devops123
+## Prometheus: http://localhost:9090
 ```
 Dashboard: 8 paneles
 •	Requests por segundo (stat)
